@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Google Fonts */
+.font1{
+    font-family: 'Roboto', sans-serif;
+}
+
+.font2{
+    font-family: 'Playfair Display', serif;
+}
+
+.font3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Font Sizes */
+.size1{
+    font-size: 20px;
+}
+
+.size2{
+    font-size: 1.5em;
+}
+
+.size3{
+    font-size: 2rem;
+}
+
+/* Text Alignment */
+.left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+/* Text Decoration */
+.underline{
+    text-decoration: underline;
+}
+
+/* Text Transformation */
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+/* Text Shadow */
+.shadow{
+    font-size: 40px;
+    text-shadow: 2px 2px 5px gray;
+}

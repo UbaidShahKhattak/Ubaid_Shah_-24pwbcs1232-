@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Styled Registration Form</title>
+<link rel="stylesheet" href="../style/form_styling.css">
+</head>
+
+<body>
+
+<h1>Registration Form</h1>
+
+<div class="form-container">
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Password</label>
+<input type="password" placeholder="Enter password">
+
+<label>Department</label>
+<select>
+<option>Select Department</option>
+<option>Computer Science</option>
+<option>Software Engineering</option>
+<option>Information Technology</option>
+</select>
+
+<!-- Error Example -->
+<p class="error">Error: Invalid email address</p>
+
+<button type="submit">Register</button>
+
+</form>
+
+<!-- Success Message -->
+<p class="success">Registration Successful!</p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+body{
+font-family:Arial;
+background:#f4f4f4;
+text-align:center;
+}
+
+.container{
+margin:20px;
+}
+
+h2{
+margin-top:30px;
+}
+
+/* Base Button Style */
+
+.btn{
+border:none;
+padding:10px 20px;
+margin:10px;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+/* Sizes */
+
+.small{
+font-size:12px;
+padding:5px 10px;
+}
+
+.medium{
+font-size:16px;
+}
+
+.large{
+font-size:22px;
+padding:15px 30px;
+}
+
+/* Colors */
+
+.primary{
+background:#007bff;
+color:white;
+}
+
+.success{
+background:#28a745;
+color:white;
+}
+
+.danger{
+background:#dc3545;
+color:white;
+}
+
+/* Shapes */
+
+.rounded{
+border-radius:10px;
+background:#6c757d;
+color:white;
+}
+
+.pill{
+border-radius:50px;
+background:#17a2b8;
+color:white;
+}
+
+/* Gradient Button */
+
+.gradient{
+background:linear-gradient(to right, #ff7e5f, #feb47b);
+color:white;
+}
+
+/* Shadow Button */
+
+.shadow{
+background:#343a40;
+color:white;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Hover State */
+
+.btn:hover{
+opacity:0.8;
+transform:scale(1.05);
+}
+
+/* Focus State */
+
+.btn:focus{
+outline:3px solid orange;
+}
+
+/* Disabled State */
+
+.btn:disabled{
+background:gray;
+cursor:not-allowed;
+opacity:0.6;
+}
