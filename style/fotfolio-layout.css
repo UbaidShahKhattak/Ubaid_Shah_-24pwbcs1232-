@@ -1,0 +1,113 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+/* Main Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Desktop layout */
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Sections styling */
+.about, .projects, .contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative; /* for decorative elements */
+}
+
+/* Decorative element */
+.decorative-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+}
+
+/* Project gallery using Flexbox */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-card {
+    flex: 1 1 calc(33% - 10px); /* masonry style for desktop */
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Responsive Design */
+
+/* Tablet: 2-column grid */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .project-card {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+/* Mobile: single column grid */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .project-gallery {
+        flex-direction: column;
+    }
+    .project-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Orientation adjustments */
+@media (orientation: landscape) and (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+}

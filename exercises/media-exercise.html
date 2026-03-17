@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query Demo</title>
+<link rel="stylesheet" href="../style/media.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Media Query Demo</h1>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Breakpoint Indicator -->
+<div class="breakpoint-indicator" id="breakpoint">
+    Current Screen: <span id="width"></span> px
+</div>
+
+<!-- Content -->
+<div class="content">
+    <section>
+        <h2>Responsive Layout</h2>
+        <p>This section demonstrates layout changes at different screen sizes.</p>
+    </section>
+
+    <section>
+        <h2>Typography Scaling</h2>
+        <p>This paragraph changes font size at different breakpoints.</p>
+    </section>
+</div>
+
+<script>
+function updateWidth() {
+    document.getElementById('width').innerText = window.innerWidth;
+}
+window.addEventListener('resize', updateWidth);
+window.addEventListener('load', updateWidth);
+</script>
+
+</body>
+</html>

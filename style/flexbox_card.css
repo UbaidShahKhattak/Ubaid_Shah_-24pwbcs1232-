@@ -1,0 +1,51 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
+}
+
+/* Card Container */
+.card-container{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+padding:20px;
+justify-content:center;
+}
+
+/* Individual Card */
+.card{
+background:white;
+flex:1 1 calc(33.33% - 40px); /* 3 columns desktop */
+display:flex;
+flex-direction:column;
+padding:20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+border-radius:5px;
+box-sizing:border-box;
+min-width:250px;
+}
+
+/* Align button to bottom */
+.card button{
+margin-top:auto;
+padding:10px;
+border:none;
+background:black;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* Responsive Layouts */
+@media (max-width:1024px){
+.card{
+flex:1 1 calc(50% - 40px); /* 2 columns tablet */
+}
+}
+
+@media (max-width:768px){
+.card{
+flex:1 1 100%; /* 1 column mobile */
+}
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 17: Responsive Utilities</title>
+    <link rel="stylesheet" href="../style/utilities.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lab Task 17</h1>
+        <p>Responsive Utility Class Demo</p>
+
+        <section>
+            <h2>1. Show/Hide Elements</h2>
+            <div class="box hide-sm show-md" style="background: #34a853;">
+                Desktop Only (Hidden on Mobile)
+            </div>
+            <div class="box hide-md" style="background: #ea4335;">
+                Mobile Only (Hidden on Desktop)
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Text Alignment per Breakpoint</h2>
+            <p class="text-center text-md-left">
+                I am <strong>Centered</strong> on mobile, but <strong>Left-aligned</strong> on tablet/desktop.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Flexbox & Spacing</h2>
+            <div class="d-flex flex-column flex-md-row justify-center">
+                <div class="box p-sm-1 p-md-4">Item A</div>
+                <div class="box p-sm-1 p-md-4">Item B</div>
+            </div>
+            <p style="margin-top: 10px;"><small>These boxes stack vertically on mobile and sit horizontally on desktop.</small></p>
+        </section>
+    </div>
+
+</body>
+</html>

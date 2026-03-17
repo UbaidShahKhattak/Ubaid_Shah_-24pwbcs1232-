@@ -1,0 +1,100 @@
+body{
+margin:0;
+font-family:Arial;
+}
+
+/* Fixed Header */
+.header{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+z-index:1000;
+}
+
+/* Layout */
+.container{
+margin-top:70px;
+display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+width:25%;
+padding:15px;
+background:lightgray;
+position:sticky;
+top:80px;
+height:200px;
+}
+
+/* Content */
+.content{
+width:75%;
+padding:15px;
+}
+
+/* Modal */
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+z-index:999;
+}
+
+.modal-box{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding:20px;
+width:300px;
+text-align:center;
+}
+
+/* Z-index demo */
+.header{
+z-index:1000;
+}
+
+.modal{
+z-index:2000;
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+/* Header becomes normal */
+.header{
+position:static;
+}
+
+/* Stack layout */
+.container{
+flex-direction:column;
+}
+
+/* Sidebar */
+.sidebar{
+position:static;
+width:100%;
+}
+
+/* Modal full screen */
+.modal-box{
+width:90%;
+height:90%;
+top:5%;
+left:5%;
+transform:none;
+}
+
+}

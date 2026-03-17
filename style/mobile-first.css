@@ -1,0 +1,109 @@
+/* Base mobile-first styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+a.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e0f0ff;
+    padding: 40px 10px;
+}
+
+/* Features Section */
+.features {
+    padding: 20px 10px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* CTA Section */
+.cta {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Progressive enhancement for larger screens */
+
+/* Tablet: 2-column features */
+@media (min-width: 768px) {
+    .feature-cards {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card {
+        flex: 1;
+        max-width: 300px;
+    }
+}
+
+/* Desktop: wider hero and typography */
+@media (min-width: 1024px) {
+    .hero {
+        padding: 60px 20px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}

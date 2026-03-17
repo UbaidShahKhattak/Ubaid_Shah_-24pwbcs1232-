@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox Navigation System</title>
+<link rel="stylesheet" href="../style/flexbox.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">MySite</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li>Home</li>
+        <li>About</li>
+
+        <li class="dropdown">
+            Services
+            <ul class="dropdown-menu">
+                <li>Web Development</li>
+                <li>Design</li>
+                <li>SEO</li>
+            </ul>
+        </li>
+
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<!-- MAIN LAYOUT -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h3>Sidebar</h3>
+        <ul>
+            <li>Dashboard</li>
+            <li>Profile</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+        <h2>Welcome</h2>
+        <p>This is a responsive flexbox navigation system.</p>
+    </main>
+
+</div>
+
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

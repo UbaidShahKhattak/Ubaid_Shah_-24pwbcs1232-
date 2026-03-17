@@ -1,0 +1,95 @@
+/* --- BASE STYLES --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #ffffff; /* Light mode default */
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* --- TASK 17: RESPONSIVE UTILITIES --- */
+.d-flex { display: flex; }
+.flex-column { flex-direction: column; }
+.text-center { text-align: center; }
+
+/* Mobile First: Hidden by default, shown later */
+.hide-sm { display: none; }
+
+/* Tablet/Desktop Breakpoint (768px) */
+@media (min-width: 768px) {
+    .flex-md-row { flex-direction: row; }
+    .text-md-left { text-align: left; }
+    .hide-sm { display: block; } /* Show on larger screens */
+    .hide-md { display: none; }  /* Hide on larger screens */
+    
+    .p-md-4 { padding: 40px; }
+}
+
+/* --- TASK 18: USER PREFERENCES --- */
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #f0f0f0;
+    }
+    .container {
+        border-color: #444;
+        background-color: #242424;
+    }
+    .box {
+        background-color: #3d5afe !important;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High Contrast */
+@media (prefers-contrast: more) {
+    body { border: 5px solid black; }
+    .box { outline: 3px solid black; font-weight: 900; }
+}
+
+/* Print Styles */
+@media print {
+    body { background: white; color: black; }
+    .no-print { display: none; }
+    .container { border: none; width: 100%; }
+}
+
+/* Helper Box for Demo */
+.box {
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
