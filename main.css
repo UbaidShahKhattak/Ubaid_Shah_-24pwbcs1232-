@@ -1,0 +1,180 @@
+/* 
+1. BASIC SELECTORS
+ */
+
+/* Element selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.intro {
+    font-size: 18px;
+    color: green;
+}
+
+/* ID selector */
+#main-title {
+    color: red;
+    text-align: center;
+}
+
+/* Universal selector */
+* {
+    font-family: Arial;
+}
+
+/* Another element selector */
+h2 {
+    text-decoration: underline;
+}
+
+
+/* 
+2. ATTRIBUTE SELECTORS
+*/
+
+/* Select elements with attribute */
+input[type] {
+    border: 2px solid black;
+}
+
+/* Attribute value selector */
+input[type="text"] {
+    background-color: lightyellow;
+}
+
+/* Partial value selector */
+a[href*="google"] {
+    color: purple;
+}
+
+
+/* 
+3. COMBINATORS
+ */
+
+/* Descendant combinator */
+.container p {
+    background-color: lightgray;
+}
+
+/* Child combinator */
+.container > ul {
+    border: 2px solid black;
+}
+
+/* Adjacent sibling combinator */
+h2 + ul {
+    color: darkblue;
+}
+
+/* General sibling combinator */
+h1 ~ a {
+    font-weight: bold;
+}
+
+
+/* 
+4. PSEUDO CLASSES
+ */
+
+/* link state */
+a:hover {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: gray;
+}
+
+/* focus form */
+input:focus {
+    background-color: lightblue;
+}
+
+/* structural */
+li:first-child {
+    color: orange;
+}
+
+/* nth-child */
+li:nth-child(2) {
+    color: green;
+}
+
+
+/* ---------------------------
+5. PSEUDO ELEMENTS
+--------------------------- */
+
+/* first letter */
+p::first-letter {
+    font-size: 30px;
+    color: red;
+}
+
+/* before element */
+h1::before {
+    content: "★ ";
+}
+
+
+/* BAck Ground */
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+section {
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* 1. Solid Color Background */
+.solid-background {
+    background-color: #4CAF50; /* Green */
+}
+
+/* 2. Image Backgrounds with Repeat Patterns */
+.image-background {
+    background-image: url('https://via.placeholder.com/100');
+    background-repeat: repeat; /* try repeat-x, repeat-y, no-repeat */
+    background-size: 100px 100px;
+    color: black;
+}
+
+/* 3. Linear Gradient Background */
+.linear-gradient {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* left to right gradient */
+}
+
+/* 4. Radial Gradient Background */
+.radial-gradient {
+    background: radial-gradient(circle, #00c6ff, #0072ff);
+}
+
+/* 5. Multiple Background Layers with Blend Modes */
+.multiple-layers {
+    background-image: 
+        url('https://via.placeholder.com/200/ff0000/ffffff'),
+        url('https://via.placeholder.com/200/0000ff/ffffff');
+    background-repeat: no-repeat, repeat;
+    background-position: center, top left;
+    background-size: 200px 200px, auto;
+    background-blend-mode: multiply;
+    color: black;
+}

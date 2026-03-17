@@ -1,0 +1,130 @@
+/* Color Scheme & Typography */
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
+color:#333;
+}
+
+/* Navigation Menu */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#222;
+padding:15px 30px;
+}
+
+.logo{
+color:white;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar ul li{
+margin-left:20px;
+}
+
+.navbar ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.navbar ul li a:hover{
+color:#00bcd4;
+}
+
+/* Hero Section */
+
+.hero{
+text-align:center;
+padding:60px 20px;
+background:#00bcd4;
+color:white;
+}
+
+.profile-img{
+border-radius:50%;
+width:150px;
+border:4px solid white;
+}
+
+/* Sections */
+
+section{
+padding:40px 20px;
+text-align:center;
+}
+
+/* Skills */
+
+.skills{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.skill-card{
+background:white;
+padding:15px 25px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Projects */
+
+.project-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.project-card{
+width:300px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+padding:15px;
+transition:0.3s;
+}
+
+.project-card img{
+width:100%;
+border-radius:10px;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+/* Responsive Design */
+
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+}
+
+.navbar ul{
+flex-direction:column;
+align-items:center;
+}
+
+.skills{
+flex-direction:column;
+}
+
+.project-container{
+flex-direction:column;
+align-items:center;
+}
+
+}

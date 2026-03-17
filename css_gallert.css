@@ -1,0 +1,75 @@
+body{
+font-family:Arial;
+background:#f4f4f4;
+text-align:center;
+}
+
+h1{
+margin:20px;
+}
+
+/* Gallery Layout */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+/* Basic Box Style */
+
+.box{
+width:150px;
+height:150px;
+background:#007bff;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
+border-radius:10px;
+transition:0.5s;
+cursor:pointer;
+}
+
+/* Rotation */
+
+.rotate:hover{
+transform:rotate(45deg);
+}
+
+/* Scaling */
+
+.scale:hover{
+transform:scale(1.5);
+}
+
+/* Translation */
+
+.translate:hover{
+transform:translate(50px,20px);
+}
+
+/* 3D Transform */
+
+.rotate3d:hover{
+transform:rotateY(180deg);
+}
+
+/* Transform Origin */
+
+.origin{
+transform-origin:top left;
+}
+
+.origin:hover{
+transform:rotate(45deg);
+}
+
+/* Combined Transform */
+
+.combined:hover{
+transform:rotate(20deg) scale(1.2) translateY(-20px);
+}

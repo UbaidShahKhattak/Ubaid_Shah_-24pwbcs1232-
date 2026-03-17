@@ -1,0 +1,93 @@
+body{
+    font-family: Arial;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+h1{
+    margin:20px;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    width:300px;
+}
+
+/* Rounded Corners */
+.rounded{
+    width:100%;
+    border-radius:20px;
+}
+
+/* Circular Image */
+.circle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* Border and Shadow */
+.border-shadow{
+    width:100%;
+    border:5px solid #333;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Hover Effect */
+.hover-effect{
+    width:100%;
+    transition:transform 0.4s;
+}
+
+.hover-effect:hover{
+    transform:scale(1.1);
+}
+
+/* CSS Filter */
+.filter{
+    width:100%;
+    filter:grayscale(100%);
+}
+
+.filter:hover{
+    filter:none;
+}
+
+/* Image Overlay */
+.overlay-card{
+    position:relative;
+    width:300px;
+}
+
+.overlay-card img{
+    width:100%;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    transition:0.4s;
+}
+
+.overlay-card:hover .overlay{
+    opacity:1;
+}
